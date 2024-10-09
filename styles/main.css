@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  }
+
+:root {
+    --primary-background: rgb(254, 250, 224);
+    --secondary-background: rgb(233, 237, 201);
+    --header-background: rgb(204, 213, 174);
+    --secondary-text-color: rgb(250, 237, 205);
+    --header-color: white;
+    --dark-color: rgb(212, 163, 115);
+    /* Spacing */
+    --spacing-unit: 16px;
+    --border-radius: 18px;
+    /* Typography */
+    --font-family: 'MyFont';
+    --bold-font-weight: 700;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--primary-background);
+}
+
+header {
+    background-color: var(--header-background);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: calc(var(--spacing-unit) * 2);
+}
+
+.logo {
+    float: left;
+    position: absolute;
+}
+
+.logo img{
+    position: relative;
+}
+
+.logo-default img{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 4;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: calc(var(--spacing-unit) * 3);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--header-color);
+    font-weight: var(--bold-font-weight);
+}
+
+.hero {
+    background-image: url('../images/Hero.jpg');
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro {
+    width: 65%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.intro h2 {
+    margin-top: calc(var(--spacing-unit) * 4);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark-color);
+    padding: calc(var(--spacing-unit) * 5);
+    display: flex;
+    justify-content: space-between;
+    color: var(--header-color)
+}
+
+.footer-logo img{
+    position: relative;
+}
+
+.left {
+    flex: 1;
+    padding: 0;
+}
+.left ul {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: var(--header-color)
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right img {
+    width: 180px;
+    position: relative;
+}
+
+.button {
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-unit);
+    cursor: pointer;
+}
+
+.firstBtn {
+    background-color: var(--secondary-background);
+    margin-right: var(--spacing-unit);
+}
+
+.secondBtn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--secondary-background);
+}

@@ -1,0 +1,42 @@
+:root {
+    --primary-background: rgb(254, 250, 224);
+    --secondary-background: rgb(233, 237, 201);
+    --header-background: rgb(204, 213, 174);
+    --secondary-text-color: rgb(250, 237, 205);
+    --header-color: white;
+    --dark-background: rgb(212, 163, 115);
+    /* Spacing */
+    --spacing-unit: 16px;
+    --border-radius: 18px;
+    /* Typography */
+    --font-family: 'MyFont';
+    --bold-font-weight: 700;
+}
+
+.about-hero {
+    background-image: url('../images/about-hero.png');
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.first {
+    height: 580px;
+    padding: 170px 100px;
+    position: relative;
+}
+
+.first h3 {
+    margin-top: 50px;
+}
+
+.first article:first-child {
+    max-width: 550px;
+}
+
+aside img {
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
