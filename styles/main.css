@@ -4,12 +4,13 @@
   }
 
 :root {
-    --primary-background: rgb(254, 250, 224);
-    --secondary-background: rgb(233, 237, 201);
-    --header-background: rgb(204, 213, 174);
+    --primary-background: rgb(69, 69, 69);
+    --secondary-background: rgb(224, 224, 224);
+    --header-background: rgb(35, 35, 34);
     --secondary-text-color: rgb(250, 237, 205);
     --header-color: white;
     --dark-color: rgb(212, 163, 115);
+    --buton-color: rgb(252, 231, 231);
     /* Spacing */
     --spacing-unit: 16px;
     --border-radius: 18px;
