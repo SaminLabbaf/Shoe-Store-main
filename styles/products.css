@@ -1,15 +1,19 @@
 
-
+h2, h3, p {
+    margin-block: 8px;
+}
 .menu-hero {
-    background-image: url('../images/hero-products.jpg');
+    background-image: url('../images/shoes.jpg');
     background-size: cover;
+    background-position: center;
     width: 100%;
-    min-height: 450px;
+    min-height: 200px;
 }
 
 .menu h2{
-    margin: 40px 0 130px 0;
+    margin: 20px 0 30px 0;
     text-align: center;
+    color: white;
 }
 
 .menu-cards {
@@ -29,16 +33,17 @@
     width: 270px;
     background-color: var(--secondary-background);
     position: relative;
-    padding: 8px;
+    padding: 16px;
     border-radius: calc(var(--border-radius)/3);
 }
 
 .menu-item img {
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
 }
 
 .menu-item button {
+    margin-top: 10px;
     border-radius: var(--border-radius);
     background-color: var(--buton-color);
     color: var(--dark-background);
